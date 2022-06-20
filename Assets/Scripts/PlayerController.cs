@@ -43,6 +43,15 @@ public class PlayerController : MonoBehaviour
         {
             anim.SetBool("isAttacking", false);
         }
+        if (Input.GetKey(KeyCode.S))
+        {
+            anim.SetBool("isDucking", true);
+
+        }
+        else
+        {
+            anim.SetBool("isDucking", false);
+        }
 
         // Move
         rBody.velocity = new Vector2(horiz * speed, rBody.velocity.y);
