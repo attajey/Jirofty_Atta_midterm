@@ -12,10 +12,12 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D rBody;
     private Animator anim;
-    public Animator chestAnim;
     private bool isGrounded = false;
     private bool isFacingRight = true;
 
+    public Animator chestAnim;
+    public Transform chestPos;
+    public Rigidbody2D star;
     void Start()
     {
         rBody = GetComponent<Rigidbody2D>();
@@ -39,11 +41,18 @@ public class PlayerController : MonoBehaviour
         {
 
             chestAnim.SetBool("isOpen", true);
+            Rigidbody2D clone;
+            for (int i = 0; i < 10; i++)
+            {
+                clone = Instantiate(star, chestPos.transform.position, chestPos.transform.rotation);
+                clone.velocity = transform.TransformDirection(Vector3.forward * 5);
+
+            }
         }
-       /* else
-        {
-            chestAnim.SetBool("isOpen", false);
-        }*/
+        /* else
+         {
+             chestAnim.SetBool("isOpen", false);
+         }*/
         if (Input.GetKey(KeyCode.S))
         {
             anim.SetBool("isDucking", true);

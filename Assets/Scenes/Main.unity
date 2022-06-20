@@ -2253,11 +2253,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8693359348468834102, guid: 971aff0fe42198045aec37982c52e7d1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.3693423
+      value: -3.3693438
       objectReference: {fileID: 0}
     - target: {fileID: 8693359348468834102, guid: 971aff0fe42198045aec37982c52e7d1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.7126399
+      value: 0.7111217
       objectReference: {fileID: 0}
     - target: {fileID: 8693359348468834102, guid: 971aff0fe42198045aec37982c52e7d1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2383,6 +2383,8 @@ GameObject:
   m_Component:
   - component: {fileID: 329334292}
   - component: {fileID: 329334291}
+  - component: {fileID: 329334293}
+  - component: {fileID: 329334294}
   m_Layer: 3
   m_Name: Chest
   m_TagString: Untagged
@@ -2458,6 +2460,38 @@ Transform:
   m_Father: {fileID: 41401903}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &329334293
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329334290}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e53b9588d6f70844e9c5cb8d829ad12b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &329334294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329334290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 759a5a3c7c61445429d062b776dbf931, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &354398166
 GameObject:
   m_ObjectHideFlags: 0
@@ -3086,6 +3120,9 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
+  chestAnim: {fileID: 329334293}
+  chestPos: {fileID: 329334292}
+  star: {fileID: 1851562961}
 --- !u!1 &1595992539
 GameObject:
   m_ObjectHideFlags: 0
@@ -3270,6 +3307,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1851562960}
   - component: {fileID: 1851562959}
+  - component: {fileID: 1851562961}
+  - component: {fileID: 1851562962}
   m_Layer: 3
   m_Name: Star
   m_TagString: Untagged
@@ -3344,6 +3383,53 @@ Transform:
   m_Father: {fileID: 41401903}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1851562961
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851562958}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &1851562962
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851562958}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00881815, y: -0.013227224}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8125, y: 0.8125}
+    newSize: {x: 0.8125, y: 0.8125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.4774084, y: 0.4862275}
+  m_EdgeRadius: 0
 --- !u!1 &1977256659
 GameObject:
   m_ObjectHideFlags: 0
