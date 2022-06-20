@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D rBody;
     private Animator anim;
+    public Animator chestAnim;
     private bool isGrounded = false;
     private bool isFacingRight = true;
 
@@ -37,12 +38,12 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.E))
         {
 
-            anim.SetBool("isAttacking", true);
+            chestAnim.SetBool("isOpen", true);
         }
-        else
+       /* else
         {
-            anim.SetBool("isAttacking", false);
-        }
+            chestAnim.SetBool("isOpen", false);
+        }*/
         if (Input.GetKey(KeyCode.S))
         {
             anim.SetBool("isDucking", true);
