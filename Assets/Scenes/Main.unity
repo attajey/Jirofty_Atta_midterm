@@ -2253,11 +2253,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8693359348468834102, guid: 971aff0fe42198045aec37982c52e7d1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.3693438
+      value: -2.4969354
       objectReference: {fileID: 0}
     - target: {fileID: 8693359348468834102, guid: 971aff0fe42198045aec37982c52e7d1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.7111217
+      value: 0.7154919
       objectReference: {fileID: 0}
     - target: {fileID: 8693359348468834102, guid: 971aff0fe42198045aec37982c52e7d1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2691,7 +2691,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -320, y: -215}
+  m_AnchoredPosition: {x: -283.4, y: -139.4}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &816677303
@@ -2771,7 +2771,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -251.1, y: -207.3}
+  m_AnchoredPosition: {x: -214.5, y: -131.7}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1228295066
@@ -2895,7 +2895,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -320, y: -243.4}
+  m_AnchoredPosition: {x: -283.4, y: -167.79999}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1315111260
@@ -3256,7 +3256,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -249.8, y: -245.10013}
+  m_AnchoredPosition: {x: -213.19998, y: -169.50012}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1755043916
@@ -3498,7 +3498,7 @@ Canvas:
   m_GameObject: {fileID: 1977256659}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 1440116336}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -3507,8 +3507,8 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1860783005
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!224 &1977256663
 RectTransform:
